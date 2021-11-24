@@ -1,0 +1,59 @@
+
+### Post product
+POST http://localhost:5000/products/
+content-type: application/json
+
+{
+"name": "foo",
+"price": 128,
+"color": "white",
+"length": "1m"
+}
+
+
+### Post another product
+POST http://localhost:5000/products/
+content-type: application/json
+
+{
+"name": "bar",
+"price": 313,
+"color": "red",
+"material": "steel",
+"size": 4
+}
+
+### Post another product
+POST http://localhost:5000/products/
+content-type: application/json
+
+{
+"name": "baz",
+"price": 256,
+"color": "white",
+"size": 4
+}
+
+### Post user
+POST http://localhost:5000/users/
+content-type: application/json
+
+{
+    "username": "mihai",
+    "password": "123-safe",
+    "licence": "premium"
+}
+
+### Post another user
+POST http://localhost:5000/users/
+content-type: application/json
+
+{
+    "username": "ion",
+    "password": "pass",
+    "licence": "regular"
+}
+
+### Get property stats
+GET http://localhost:5000/products/
+
